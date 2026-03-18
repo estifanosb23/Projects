@@ -1,0 +1,6 @@
+public class README.m {
+    public static void main(String[] args) {
+        System.out.println("Here are some of the coding projects I've worked on");
+        System.out.println("\nEnjoy");
+    }
+}
