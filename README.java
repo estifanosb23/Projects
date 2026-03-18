@@ -1,6 +1,6 @@
-public class README{
-    public static void main(String[] args){ 
-        System.out.println("Here are some of the coding projects I've worked on");    
-        System.out.println("\n Enjoy");
+```java
+public class README {
+    public static void main(String[] args) {
+        System.out.println("Hello, GitHub!");
     }
 }
