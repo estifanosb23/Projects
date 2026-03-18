@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class price_calculator {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.print("Enter The Amount of a Purchase: ");
+        double purchaseprice = console.nextDouble();
+        double statesalestax = 0.04;
+        double countysalestax = 0.02;
+
+
+        double results = purchaseprice + 0.04 + 0.02;
+        if (purchaseprice >= 10) {
+            double results2 = results + 0.000000000000001;
+            System.out.println("Sub Total:" +".............." + purchaseprice);
+            System.out.println("State Sales Tax:" +"........" + statesalestax);
+            System.out.println("County Sales Tax:" +"......." + countysalestax);
+            System.out.println("Total:" +".................." + results2);
+        } else {
+            System.out.println("Sub Total:" +".............." + purchaseprice);
+            System.out.println("State Sales Tax:" +"........" + statesalestax);
+            System.out.println("County Sales Tax:" +"......." + countysalestax);
+            System.out.println("Total:" +".................." + results);
+        }
+
+    }
+}
