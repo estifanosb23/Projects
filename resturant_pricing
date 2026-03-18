@@ -1,0 +1,72 @@
+import java.util.*;
+
+public class resturant_pricing {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+
+        System.out.print("Enter Drink: ");
+        String drinkChoice = console.nextLine();
+
+        double drink = 0;
+
+        if (drinkChoice.equals("Coke")) {
+            drink = 2.59;
+        } 
+        else if (drinkChoice.equals("Sprite")) {
+            drink = 2.31;
+        } 
+        else if (drinkChoice.equals("Fanta")) {
+            drink = 2.25;
+        }
+
+        
+        System.out.print("Enter Entrée: ");
+        String entéeChoice = console.nextLine();
+
+        double entrée = 0;
+
+        if (entéeChoice.equals("Salmon")) {
+            entrée = 23.99;
+        } 
+        else if (entéeChoice.equals("Steak")) {
+            entrée = 29.99;
+        } 
+        else if (entéeChoice.equals("Soup")) {
+            entrée = 19.99;
+        }
+
+        System.out.print("Enter Desert: ");
+        String desertChoise = console.nextLine();
+
+        double desert = 0;
+
+        if (desertChoise.equals("Ice Cream")) {
+            desert = 7.99;
+        } 
+        else if (desertChoise.equals("Créme Brulée")) {
+            desert = 14.99;
+        } 
+        else if (desertChoise.equals("Cake")) {
+            desert = 10.00;
+        }
+
+        double subtotal = drink + entrée + desert;
+        double tax = subtotal * 0.06;
+        double roundedTax = Math.round(tax * 100.0) / 100.0;
+        double tip = subtotal * 0.20;
+        double roundedTip = Math.round(tip * 100.0) / 100.0;
+        double total = subtotal + tax + tip;
+        double roundedTotal = Math.round(total * 100.0) / 100.0;
+
+
+        System.out.println("\n\n       Recipt");
+        System.out.println("\nDrink.........." + drink);
+        System.out.println("Entrée........." + entrée);
+        System.out.println("Desert........." + desert);
+        System.out.println("Tax(6%)........" + roundedTax);
+        System.out.println("Tip(20%)......." + roundedTip);
+        System.out.println("Total.........." + roundedTotal);
+
+
+    }
+}
