@@ -1,4 +1,4 @@
-public class README.m {
+public class README.md {
     public static void main(String[] args) {
         System.out.println("Here are some of the coding projects I've worked on");
         System.out.println("\nEnjoy");
